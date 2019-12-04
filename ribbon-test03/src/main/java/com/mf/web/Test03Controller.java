@@ -1,0 +1,21 @@
+package com.mf.web;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @ClassName Test03Controller
+ * @Description: TODO
+ * @Author mf
+ * @Date 2019/12/4
+ * @Version V1.0
+ **/
+@RestController
+public class Test03Controller {
+    @RequestMapping("test01")
+    public String test01(String name){
+        System.out.println("--------name--------"+name);
+        return "test01-ok";
+    }
+}
